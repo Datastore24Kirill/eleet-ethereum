@@ -10,16 +10,16 @@ public final class HDWallet {
     
     // MARK: - Public Methods
     
-    public func generatePrivateKey(at index: UInt32) throws -> PrivateKey {
+    public func privateKey(at index: UInt32) throws -> PrivateKey {
         return try privateKey(change: .external).derived(at: index).privateKey()
     }
     
-    public func generateAddress(at index: UInt32) throws -> String {
-        return try generatePrivateKey(at: index).publicKey.generateAddress()
+    public func address(at index: UInt32) throws -> String {
+        return try privateKey(at: index).publicKey.address()
     }
     
-    public func dumpPrivateKey(at index: UInt32) throws -> String {
-        return try generatePrivateKey(at: index).raw.toHexString()
+    public func privateKey(at index: UInt32) throws -> String {
+        return try privateKey(at: index).raw.toHexString()
     }
     
     // MARK: - Private Methods
@@ -37,5 +37,80 @@ public final class HDWallet {
             .derived(at: network.coinType, hardens: true)
             .derived(at: 0, hardens: true)
             .derived(at: change.rawValue)
+    }
+}
+
+// MARK: - Sign Transaction
+
+extension HDWallet {
+    
+    /// Sign signs rlp encoding hash of specified raw transaction
+    ///
+    /// - Parameters:
+    ///   - rawTransaction: raw transaction to hash
+    ///   - index: index of a private key which will be used to sign
+    /// - Returns: signiture in hex format
+    /// - Throws: EthereumKitError.failedToEncode when failed to encode
+    public func sign(rawTransaction: RawTransaction, withPrivateKeyAtIndex index: UInt32) throws -> String {
+        let wallet = Wallet(network: network, privateKey: try privateKey(at: index), debugPrints: false)
+        return try wallet.sign(rawTransaction: rawTransaction)
+    }
+}
+
+// MARK :- Sign message
+
+extension HDWallet {
+    
+    /// Sign a provided hex string
+    ///
+    /// - Parameters:
+    ///   - hex: hex value to sign (hex format)
+    ///   - index: index of a private key which will be used to sign
+    /// - Returns: signature in string format
+    /// - Throws: EthereumKitError.failedToEncode when failed to encode
+    public func sign(hex: String, withPrivateKeyAtIndex index: UInt32) throws -> String {
+        let wallet = Wallet(network: network, privateKey: try privateKey(at: index), debugPrints: false)
+        return try wallet.sign(hex: hex)
+    }
+    
+    /// Sign a provided message
+    ///
+    /// - Parameters:
+    ///   - message: message to sign (string format)
+    ///   - index: index of a private key which will be used to sign
+    /// - Returns: signature in string format
+    /// - Throws: EthereumKitError.failedToEncode when failed to encode
+    public func sign(message: String, withPrivateKeyAtIndex index: UInt32) throws -> String {
+        let wallet = Wallet(network: network, privateKey: try privateKey(at: index), debugPrints: false)
+        return try wallet.sign(message: message)
+    }
+}
+
+extension HDWallet {
+    
+    /// Sign calculates an Ethereum ECDSA signature for: keccack256("\x19Ethereum Signed Message:\n" + len(message) + message))
+    /// See also: https://github.com/ethereum/go-ethereum/wiki/Management-APIs#personal_sign
+    ///
+    /// - Parameters:
+    ///   - hex: message in hex format to sign
+    ///   - index: index of a private key which will be used to sign
+    /// - Returns: signiture in hex format
+    /// - Throws: EthereumKitError.failedToEncode when failed to encode
+    public func personalSign(hex: String, withPrivateKeyAtIndex index: UInt32) throws -> String {
+        let wallet = Wallet(network: network, privateKey: try privateKey(at: index), debugPrints: false)
+        return try wallet.personalSign(hex: hex)
+    }
+    
+    /// Sign calculates an Ethereum ECDSA signature for: keccack256("\x19Ethereum Signed Message:\n" + len(message) + message))
+    /// See also: https://github.com/ethereum/go-ethereum/wiki/Management-APIs#personal_sign
+    ///
+    /// - Parameters:
+    ///   - message: message to sign
+    ///   - index: index of a private key which will be used to sign
+    /// - Returns: signiture in hex format
+    /// - Throws: EthereumKitError.failedToEncode when failed to encode
+    public func personalSign(message: String, withPrivateKeyAtIndex index: UInt32) throws -> String {
+        let wallet = Wallet(network: network, privateKey: try privateKey(at: index), debugPrints: false)
+        return try wallet.personalSign(message: message)
     }
 }
