@@ -70,7 +70,7 @@ public class EthereumWallet {
             ))
         default:
             geth = Geth(configuration: Configuration(
-                network: .main,
+                network: .mainnet,
                 nodeEndpoint: "https://mainnet.infura.io/dWNQZeUnLI78WlxX45Cs",
                 etherscanAPIKey: "IQRY7URW5PDAEDF9PGX2BKYQW5IIBVN4GI",
                 debugPrints: false
@@ -212,13 +212,9 @@ public class EthereumWallet {
     
     // Получить свой адрес
     public func getAddress() -> String {
-        if (self.walletAddress == nil) {
-            EthereumWallet.lockQueue.sync {
-                self.walletAddress = self.wallet.generateAddress();
-            }
-        }
         
-        return self.walletAddress!;
+        
+        return "";
     }
     
     // Получение истории транзакций
@@ -228,7 +224,7 @@ public class EthereumWallet {
     
     // Экспортировать приватный ключ в незашифрованном виде (hex)
     public func exportPrivateKey() -> String {
-        return wallet.dumpPrivateKey();
+        return ""
     }
     
     public func exportMnemonic() -> [String] {
@@ -309,7 +305,7 @@ class KeyStoreUtils {
     
     static func serializeNetworkType(network: Network) -> String {
         switch network {
-        case .main:
+        case .mainnet:
             return "main"
         default:
             return "ropsten"
@@ -318,7 +314,7 @@ class KeyStoreUtils {
     
     static func parseNetworkType(type: String) -> Network {
         if(type == "main") {
-            return Network.main;
+            return Network.mainnet;
         }
         
         return Network.ropsten;
