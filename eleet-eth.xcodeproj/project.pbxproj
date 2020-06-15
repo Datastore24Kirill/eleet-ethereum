@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11542F9220DF7F76006916CC /* EthereumWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11542F9120DF7F76006916CC /* EthereumWallet.swift */; };
+		11542FB720DF8AFA006916CC /* CryptoEthereumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11542FB220DF83E8006916CC /* CryptoEthereumSwift.framework */; };
+		11542FB820DF8AFA006916CC /* CryptoEthereumSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11542FB220DF83E8006916CC /* CryptoEthereumSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11542FB920DF8AFA006916CC /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11542FB320DF83E8006916CC /* CryptoSwift.framework */; };
+		11542FBA20DF8AFA006916CC /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11542FB320DF83E8006916CC /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11542FBB20DF8AFA006916CC /* EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11542FB120DF83E8006916CC /* EthereumKit.framework */; };
+		11542FBC20DF8AFA006916CC /* EthereumKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11542FB120DF83E8006916CC /* EthereumKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		119D38B120DF77CB00990605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D38B020DF77CB00990605 /* AppDelegate.swift */; };
+		119D38B320DF77CB00990605 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D38B220DF77CB00990605 /* ViewController.swift */; };
+		119D38B620DF77CB00990605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119D38B420DF77CB00990605 /* Main.storyboard */; };
+		119D38B820DF77CC00990605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119D38B720DF77CC00990605 /* Assets.xcassets */; };
+		119D38BB20DF77CC00990605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119D38B920DF77CC00990605 /* LaunchScreen.storyboard */; };
+		119D38C620DF77CC00990605 /* eleet_ethTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D38C520DF77CC00990605 /* eleet_ethTests.swift */; };
+		119D38D120DF77CD00990605 /* eleet_ethUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D38D020DF77CD00990605 /* eleet_ethUITests.swift */; };
+		8C66A0E120E3DFF3005DF3DE /* EleetEthereumWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C66A0D820E3DFF3005DF3DE /* EleetEthereumWallet.framework */; };
+		8C66A0E820E3DFF3005DF3DE /* EleetEthereumWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C66A0E720E3DFF3005DF3DE /* EleetEthereumWalletTests.swift */; };
+		8C66A0EA20E3DFF3005DF3DE /* EleetEthereumWallet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C66A0DA20E3DFF3005DF3DE /* EleetEthereumWallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C66A0F520E3E0AD005DF3DE /* EthereumWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11542F9120DF7F76006916CC /* EthereumWallet.swift */; };
+		8C66A0F620E3E0D7005DF3DE /* CryptoEthereumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11542FB220DF83E8006916CC /* CryptoEthereumSwift.framework */; };
+		8C66A0F720E3E0D7005DF3DE /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11542FB320DF83E8006916CC /* CryptoSwift.framework */; };
+		8C66A0F820E3E0D7005DF3DE /* EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11542FB120DF83E8006916CC /* EthereumKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		119D38C220DF77CC00990605 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119D38A520DF77CB00990605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 119D38AC20DF77CB00990605;
+			remoteInfo = "eleet-eth";
+		};
+		119D38CD20DF77CC00990605 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119D38A520DF77CB00990605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 119D38AC20DF77CB00990605;
+			remoteInfo = "eleet-eth";
+		};
+		8C66A0E220E3DFF3005DF3DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119D38A520DF77CB00990605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C66A0D720E3DFF2005DF3DE;
+			remoteInfo = EleetEthereumWallet;
+		};
+		8C66A0E420E3DFF3005DF3DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 119D38A520DF77CB00990605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 119D38AC20DF77CB00990605;
+			remoteInfo = "eleet-eth";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11542FBD20DF8AFA006916CC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11542FB820DF8AFA006916CC /* CryptoEthereumSwift.framework in Embed Frameworks */,
+				11542FBA20DF8AFA006916CC /* CryptoSwift.framework in Embed Frameworks */,
+				11542FBC20DF8AFA006916CC /* EthereumKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11542F9120DF7F76006916CC /* EthereumWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumWallet.swift; sourceTree = "<group>"; };
+		11542FB120DF83E8006916CC /* EthereumKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EthereumKit.framework; path = Carthage/Build/iOS/EthereumKit.framework; sourceTree = "<group>"; };
+		11542FB220DF83E8006916CC /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoEthereumSwift.framework; path = Carthage/Build/iOS/CryptoEthereumSwift.framework; sourceTree = "<group>"; };
+		11542FB320DF83E8006916CC /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		119D38AD20DF77CB00990605 /* eleet-eth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eleet-eth.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		119D38B020DF77CB00990605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		119D38B220DF77CB00990605 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		119D38B520DF77CB00990605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		119D38B720DF77CC00990605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		119D38BA20DF77CC00990605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		119D38BC20DF77CC00990605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119D38C120DF77CC00990605 /* eleet-ethTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eleet-ethTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		119D38C520DF77CC00990605 /* eleet_ethTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eleet_ethTests.swift; sourceTree = "<group>"; };
+		119D38C720DF77CC00990605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119D38CC20DF77CC00990605 /* eleet-ethUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eleet-ethUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		119D38D020DF77CD00990605 /* eleet_ethUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eleet_ethUITests.swift; sourceTree = "<group>"; };
+		119D38D220DF77CD00990605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C66A0D820E3DFF3005DF3DE /* EleetEthereumWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EleetEthereumWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C66A0DA20E3DFF3005DF3DE /* EleetEthereumWallet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EleetEthereumWallet.h; sourceTree = "<group>"; };
+		8C66A0DB20E3DFF3005DF3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C66A0E020E3DFF3005DF3DE /* EleetEthereumWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EleetEthereumWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C66A0E720E3DFF3005DF3DE /* EleetEthereumWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EleetEthereumWalletTests.swift; sourceTree = "<group>"; };
+		8C66A0E920E3DFF3005DF3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		119D38AA20DF77CB00990605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11542FB720DF8AFA006916CC /* CryptoEthereumSwift.framework in Frameworks */,
+				11542FB920DF8AFA006916CC /* CryptoSwift.framework in Frameworks */,
+				11542FBB20DF8AFA006916CC /* EthereumKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119D38BE20DF77CC00990605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119D38C920DF77CC00990605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C66A0D420E3DFF2005DF3DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C66A0F620E3E0D7005DF3DE /* CryptoEthereumSwift.framework in Frameworks */,
+				8C66A0F720E3E0D7005DF3DE /* CryptoSwift.framework in Frameworks */,
+				8C66A0F820E3E0D7005DF3DE /* EthereumKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C66A0DD20E3DFF3005DF3DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C66A0E120E3DFF3005DF3DE /* EleetEthereumWallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11542FB020DF83E8006916CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11542FB220DF83E8006916CC /* CryptoEthereumSwift.framework */,
+				11542FB320DF83E8006916CC /* CryptoSwift.framework */,
+				11542FB120DF83E8006916CC /* EthereumKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		119D38A420DF77CB00990605 = {
+			isa = PBXGroup;
+			children = (
+				119D38AF20DF77CB00990605 /* eleet-eth */,
+				119D38C420DF77CC00990605 /* eleet-ethTests */,
+				119D38CF20DF77CD00990605 /* eleet-ethUITests */,
+				8C66A0D920E3DFF3005DF3DE /* EleetEthereumWallet */,
+				8C66A0E620E3DFF3005DF3DE /* EleetEthereumWalletTests */,
+				119D38AE20DF77CB00990605 /* Products */,
+				11542FB020DF83E8006916CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		119D38AE20DF77CB00990605 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				119D38AD20DF77CB00990605 /* eleet-eth.app */,
+				119D38C120DF77CC00990605 /* eleet-ethTests.xctest */,
+				119D38CC20DF77CC00990605 /* eleet-ethUITests.xctest */,
+				8C66A0D820E3DFF3005DF3DE /* EleetEthereumWallet.framework */,
+				8C66A0E020E3DFF3005DF3DE /* EleetEthereumWalletTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		119D38AF20DF77CB00990605 /* eleet-eth */ = {
+			isa = PBXGroup;
+			children = (
+				119D38B020DF77CB00990605 /* AppDelegate.swift */,
+				119D38B220DF77CB00990605 /* ViewController.swift */,
+				119D38B420DF77CB00990605 /* Main.storyboard */,
+				119D38B720DF77CC00990605 /* Assets.xcassets */,
+				119D38B920DF77CC00990605 /* LaunchScreen.storyboard */,
+				119D38BC20DF77CC00990605 /* Info.plist */,
+				11542F9120DF7F76006916CC /* EthereumWallet.swift */,
+			);
+			path = "eleet-eth";
+			sourceTree = "<group>";
+		};
+		119D38C420DF77CC00990605 /* eleet-ethTests */ = {
+			isa = PBXGroup;
+			children = (
+				119D38C520DF77CC00990605 /* eleet_ethTests.swift */,
+				119D38C720DF77CC00990605 /* Info.plist */,
+			);
+			path = "eleet-ethTests";
+			sourceTree = "<group>";
+		};
+		119D38CF20DF77CD00990605 /* eleet-ethUITests */ = {
+			isa = PBXGroup;
+			children = (
+				119D38D020DF77CD00990605 /* eleet_ethUITests.swift */,
+				119D38D220DF77CD00990605 /* Info.plist */,
+			);
+			path = "eleet-ethUITests";
+			sourceTree = "<group>";
+		};
+		8C66A0D920E3DFF3005DF3DE /* EleetEthereumWallet */ = {
+			isa = PBXGroup;
+			children = (
+				8C66A0DA20E3DFF3005DF3DE /* EleetEthereumWallet.h */,
+				8C66A0DB20E3DFF3005DF3DE /* Info.plist */,
+			);
+			path = EleetEthereumWallet;
+			sourceTree = "<group>";
+		};
+		8C66A0E620E3DFF3005DF3DE /* EleetEthereumWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C66A0E720E3DFF3005DF3DE /* EleetEthereumWalletTests.swift */,
+				8C66A0E920E3DFF3005DF3DE /* Info.plist */,
+			);
+			path = EleetEthereumWalletTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8C66A0D520E3DFF2005DF3DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C66A0EA20E3DFF3005DF3DE /* EleetEthereumWallet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		119D38AC20DF77CB00990605 /* eleet-eth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119D38D520DF77CD00990605 /* Build configuration list for PBXNativeTarget "eleet-eth" */;
+			buildPhases = (
+				119D38A920DF77CB00990605 /* Sources */,
+				119D38AA20DF77CB00990605 /* Frameworks */,
+				119D38AB20DF77CB00990605 /* Resources */,
+				11542FBD20DF8AFA006916CC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "eleet-eth";
+			productName = "eleet-eth";
+			productReference = 119D38AD20DF77CB00990605 /* eleet-eth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		119D38C020DF77CC00990605 /* eleet-ethTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119D38D820DF77CD00990605 /* Build configuration list for PBXNativeTarget "eleet-ethTests" */;
+			buildPhases = (
+				119D38BD20DF77CC00990605 /* Sources */,
+				119D38BE20DF77CC00990605 /* Frameworks */,
+				119D38BF20DF77CC00990605 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				119D38C320DF77CC00990605 /* PBXTargetDependency */,
+			);
+			name = "eleet-ethTests";
+			productName = "eleet-ethTests";
+			productReference = 119D38C120DF77CC00990605 /* eleet-ethTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		119D38CB20DF77CC00990605 /* eleet-ethUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119D38DB20DF77CD00990605 /* Build configuration list for PBXNativeTarget "eleet-ethUITests" */;
+			buildPhases = (
+				119D38C820DF77CC00990605 /* Sources */,
+				119D38C920DF77CC00990605 /* Frameworks */,
+				119D38CA20DF77CC00990605 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				119D38CE20DF77CC00990605 /* PBXTargetDependency */,
+			);
+			name = "eleet-ethUITests";
+			productName = "eleet-ethUITests";
+			productReference = 119D38CC20DF77CC00990605 /* eleet-ethUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8C66A0D720E3DFF2005DF3DE /* EleetEthereumWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C66A0F320E3DFF3005DF3DE /* Build configuration list for PBXNativeTarget "EleetEthereumWallet" */;
+			buildPhases = (
+				8C66A0D320E3DFF2005DF3DE /* Sources */,
+				8C66A0D420E3DFF2005DF3DE /* Frameworks */,
+				8C66A0D520E3DFF2005DF3DE /* Headers */,
+				8C66A0D620E3DFF2005DF3DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EleetEthereumWallet;
+			productName = EleetEthereumWallet;
+			productReference = 8C66A0D820E3DFF3005DF3DE /* EleetEthereumWallet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C66A0DF20E3DFF3005DF3DE /* EleetEthereumWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C66A0F420E3DFF3005DF3DE /* Build configuration list for PBXNativeTarget "EleetEthereumWalletTests" */;
+			buildPhases = (
+				8C66A0DC20E3DFF3005DF3DE /* Sources */,
+				8C66A0DD20E3DFF3005DF3DE /* Frameworks */,
+				8C66A0DE20E3DFF3005DF3DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C66A0E320E3DFF3005DF3DE /* PBXTargetDependency */,
+				8C66A0E520E3DFF3005DF3DE /* PBXTargetDependency */,
+			);
+			name = EleetEthereumWalletTests;
+			productName = EleetEthereumWalletTests;
+			productReference = 8C66A0E020E3DFF3005DF3DE /* EleetEthereumWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		119D38A520DF77CB00990605 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "руслан";
+				TargetAttributes = {
+					119D38AC20DF77CB00990605 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					119D38C020DF77CC00990605 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 119D38AC20DF77CB00990605;
+					};
+					119D38CB20DF77CC00990605 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 119D38AC20DF77CB00990605;
+					};
+					8C66A0D720E3DFF2005DF3DE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8C66A0DF20E3DFF3005DF3DE = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 119D38AC20DF77CB00990605;
+					};
+				};
+			};
+			buildConfigurationList = 119D38A820DF77CB00990605 /* Build configuration list for PBXProject "eleet-eth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 119D38A420DF77CB00990605;
+			productRefGroup = 119D38AE20DF77CB00990605 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				119D38AC20DF77CB00990605 /* eleet-eth */,
+				119D38C020DF77CC00990605 /* eleet-ethTests */,
+				119D38CB20DF77CC00990605 /* eleet-ethUITests */,
+				8C66A0D720E3DFF2005DF3DE /* EleetEthereumWallet */,
+				8C66A0DF20E3DFF3005DF3DE /* EleetEthereumWalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		119D38AB20DF77CB00990605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119D38BB20DF77CC00990605 /* LaunchScreen.storyboard in Resources */,
+				119D38B820DF77CC00990605 /* Assets.xcassets in Resources */,
+				119D38B620DF77CB00990605 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119D38BF20DF77CC00990605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119D38CA20DF77CC00990605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C66A0D620E3DFF2005DF3DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C66A0DE20E3DFF3005DF3DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		119D38A920DF77CB00990605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119D38B320DF77CB00990605 /* ViewController.swift in Sources */,
+				119D38B120DF77CB00990605 /* AppDelegate.swift in Sources */,
+				11542F9220DF7F76006916CC /* EthereumWallet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119D38BD20DF77CC00990605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119D38C620DF77CC00990605 /* eleet_ethTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		119D38C820DF77CC00990605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119D38D120DF77CD00990605 /* eleet_ethUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C66A0D320E3DFF2005DF3DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C66A0F520E3E0AD005DF3DE /* EthereumWallet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C66A0DC20E3DFF3005DF3DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C66A0E820E3DFF3005DF3DE /* EleetEthereumWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		119D38C320DF77CC00990605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 119D38AC20DF77CB00990605 /* eleet-eth */;
+			targetProxy = 119D38C220DF77CC00990605 /* PBXContainerItemProxy */;
+		};
+		119D38CE20DF77CC00990605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 119D38AC20DF77CB00990605 /* eleet-eth */;
+			targetProxy = 119D38CD20DF77CC00990605 /* PBXContainerItemProxy */;
+		};
+		8C66A0E320E3DFF3005DF3DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C66A0D720E3DFF2005DF3DE /* EleetEthereumWallet */;
+			targetProxy = 8C66A0E220E3DFF3005DF3DE /* PBXContainerItemProxy */;
+		};
+		8C66A0E520E3DFF3005DF3DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 119D38AC20DF77CB00990605 /* eleet-eth */;
+			targetProxy = 8C66A0E420E3DFF3005DF3DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		119D38B420DF77CB00990605 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				119D38B520DF77CB00990605 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		119D38B920DF77CC00990605 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				119D38BA20DF77CC00990605 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		119D38D320DF77CD00990605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		119D38D420DF77CD00990605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		119D38D620DF77CD00990605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "eleet-eth/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ee.eleet-samples.eleet-eth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		119D38D720DF77CD00990605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "eleet-eth/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ee.eleet-samples.eleet-eth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		119D38D920DF77CD00990605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "eleet-ethTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ee.eleet-samples.eleet-ethTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eleet-eth.app/eleet-eth";
+			};
+			name = Debug;
+		};
+		119D38DA20DF77CD00990605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "eleet-ethTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ee.eleet-samples.eleet-ethTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eleet-eth.app/eleet-eth";
+			};
+			name = Release;
+		};
+		119D38DC20DF77CD00990605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "eleet-ethUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ee.eleet-samples.eleet-ethUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "eleet-eth";
+			};
+			name = Debug;
+		};
+		119D38DD20DF77CD00990605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "eleet-ethUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ee.eleet-samples.eleet-ethUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "eleet-eth";
+			};
+			name = Release;
+		};
+		8C66A0EF20E3DFF3005DF3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = EleetEthereumWallet/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ee.eleet.EleetEthereumWallet;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C66A0F020E3DFF3005DF3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = EleetEthereumWallet/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ee.eleet.EleetEthereumWallet;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C66A0F120E3DFF3005DF3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EleetEthereumWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eleet.EleetEthereumWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eleet-eth.app/eleet-eth";
+			};
+			name = Debug;
+		};
+		8C66A0F220E3DFF3005DF3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EleetEthereumWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eleet.EleetEthereumWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eleet-eth.app/eleet-eth";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		119D38A820DF77CB00990605 /* Build configuration list for PBXProject "eleet-eth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119D38D320DF77CD00990605 /* Debug */,
+				119D38D420DF77CD00990605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		119D38D520DF77CD00990605 /* Build configuration list for PBXNativeTarget "eleet-eth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119D38D620DF77CD00990605 /* Debug */,
+				119D38D720DF77CD00990605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		119D38D820DF77CD00990605 /* Build configuration list for PBXNativeTarget "eleet-ethTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119D38D920DF77CD00990605 /* Debug */,
+				119D38DA20DF77CD00990605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		119D38DB20DF77CD00990605 /* Build configuration list for PBXNativeTarget "eleet-ethUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119D38DC20DF77CD00990605 /* Debug */,
+				119D38DD20DF77CD00990605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C66A0F320E3DFF3005DF3DE /* Build configuration list for PBXNativeTarget "EleetEthereumWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C66A0EF20E3DFF3005DF3DE /* Debug */,
+				8C66A0F020E3DFF3005DF3DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C66A0F420E3DFF3005DF3DE /* Build configuration list for PBXNativeTarget "EleetEthereumWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C66A0F120E3DFF3005DF3DE /* Debug */,
+				8C66A0F220E3DFF3005DF3DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 119D38A520DF77CB00990605 /* Project object */;
+}

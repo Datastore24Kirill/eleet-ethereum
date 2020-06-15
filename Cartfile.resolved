@@ -1,0 +1,3 @@
+github "krzyzanowskim/CryptoSwift" "1.1.2"
+github "yuzushioh/CryptoEthereumSwift" "1.0.1"
+github "yuzushioh/EthereumKit" "2.0.0"
